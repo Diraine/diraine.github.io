@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>John Doe</h1>
+        <p>DevOps Engineer | Cloud Enthusiast | Automation Advocate</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate DevOps Engineer with experience in automating deployment processes, managing cloud infrastructure, and improving CI/CD pipelines. I love collaborating with development teams to enhance operational efficiency and deliver high-quality software.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Services: AWS, Azure, Google Cloud</li>
+            <li>Containerization: Docker, Kubernetes</li>
+            <li>CI/CD Tools: Jenkins, GitHub Actions, GitLab CI</li>
+            <li>Scripting Languages: Python, Bash</li>
+            <li>Infrastructure as Code: Terraform, Ansible</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated Deployment Pipeline</h3>
+            <p>Developed a CI/CD pipeline using Jenkins to automate the deployment of applications to AWS, reducing deployment time by 50%.</p>
+        </div>
+        <div class="project">
+            <h3>Containerized Application</h3>
+            <p>Built a microservices application using Docker and Kubernetes, ensuring seamless deployment and scaling in cloud environments.</p>
+        </div>
+        <div class="project">
+            <h3>Infrastructure as Code</h3>
+            <p>Implemented infrastructure management using Terraform, enabling version control for cloud resources and improving resource management.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+        <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
