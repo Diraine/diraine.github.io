@@ -3,9 +3,25 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Skill Icons Styling */
 .skill-icon {
-    width: 80px;
+    width: 70px;
+    margin-top: 10px;
 }
+
+/* Row Margin to Add Spacing Between Rows */
+#skills .row {
+    margin-bottom: 40px;
+}
+
+/* Ensure proper layout for screens wider than 992px */
+@media (min-width: 992px) {
+    #skills .col-lg-1 {
+        flex: 0 0 14.285714%; /* 100% divided by 7 */
+        max-width: 14.285714%;
+    }
+}
+
 
 h2 {
     font-weight: bold;
